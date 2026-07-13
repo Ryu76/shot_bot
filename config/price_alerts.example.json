@@ -1,0 +1,13 @@
+{
+  "poll_minutes": 5,
+  "market_timezone": "America/New_York",
+  "positions": [
+    {
+      "ticker": "AAPL",
+      "entry_price": 0,
+      "entry_direction": "at_or_below",
+      "stop_price": 0,
+      "note": "Set positive USD entry/stop prices before enabling."
+    }
+  ]
+}

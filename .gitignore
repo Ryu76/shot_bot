@@ -6,3 +6,5 @@ __pycache__/
 .pytest_cache/
 data/snapshots/
 reports/
+config/price_alerts.json
+data/alert_state.json
