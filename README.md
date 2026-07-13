@@ -28,6 +28,19 @@ uv pip install --python .venv/Scripts/python.exe -e ".[dev,research]"
 - `signals.py` — 날짜별 상대수익 랭킹 타깃 및 top-k 선택
 - `risk.py` — ATR 기반 위험 예산 수량 계산
 - `backtest.py` — 보수적 일봉 exit 규칙
+- `snapshot.py` — CSV 스냅샷과 SHA-256 메타데이터 기록
+- `ranking.py` / `research.py` — 날짜 그룹 LightGBM LambdaRank 및 expanding walk-forward 점수 생성
+- `scripts/run_research.py` — 주문 없이 시세 스냅샷·점수·최신 후보를 생성하는 CLI
+
+## 연구 실행 예시
+
+```bash
+.venv/Scripts/python.exe scripts/run_research.py \
+  --tickers AAPL,MSFT,NVDA,AMZN \
+  --period 1y --horizon 5 --min-train-dates 80 --rebalance-every 20
+```
+
+결과는 로컬 `data/snapshots/`(원시/점수 데이터와 SHA-256 메타데이터) 및 `reports/latest_candidates.csv`에 저장됩니다. 이 파일들은 재현 연구 데이터이므로 Git에는 기본적으로 포함하지 않습니다.
 
 ## 다음 연구 단계
 
