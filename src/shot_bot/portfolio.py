@@ -7,6 +7,7 @@ import pandas as pd
 class PortfolioResult:
     equity: pd.Series
     metrics: dict[str, float]
+    rebalances: pd.DataFrame
 
 def backtest_equal_weight_top_k(scores: pd.DataFrame, prices: pd.DataFrame, *, initial_capital: float, top_k: int, transaction_cost_bps: float) -> PortfolioResult:
     required_scores = {"date", "ticker", "score"}
@@ -23,6 +24,7 @@ def backtest_equal_weight_top_k(scores: pd.DataFrame, prices: pd.DataFrame, *, i
     curve = [(signal_dates[0], equity)]
     cost = transaction_cost_bps / 10_000
     rebalances = 0
+    rebalance_rows = []
     for signal_date, next_signal in zip(signal_dates[:-1], signal_dates[1:]):
         entries = price_dates[price_dates > signal_date]
         exits = price_dates[price_dates > next_signal]
@@ -36,10 +38,16 @@ def backtest_equal_weight_top_k(scores: pd.DataFrame, prices: pd.DataFrame, *, i
         if common.empty:
             continue
         gross = (exit_.loc[common] / entry.loc[common]).mean()
+        starting_equity = equity
         equity *= (1 - cost) * gross * (1 - cost)
+        rebalance_rows.append({
+            "signal_date": signal_date, "entry_date": entry_date, "exit_date": exit_date,
+            "tickers": ",".join(common.tolist()), "gross_return_pct": (gross - 1) * 100,
+            "net_return_pct": (equity / starting_equity - 1) * 100, "ending_equity": equity,
+        })
         curve.append((exit_date, equity))
         rebalances += 1
     series = pd.Series(dict(curve)).sort_index()
     mdd = ((series / series.cummax()) - 1).min() * 100
     metrics = {"total_return_pct": (series.iloc[-1] / initial_capital - 1) * 100, "max_drawdown_pct": float(mdd), "rebalance_count": rebalances}
-    return PortfolioResult(series, metrics)
+    return PortfolioResult(series, metrics, pd.DataFrame(rebalance_rows))

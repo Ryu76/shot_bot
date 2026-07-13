@@ -27,3 +27,4 @@ def test_portfolio_executes_signal_on_next_open_and_applies_costs():
     assert result.equity.iloc[-1] < 1_100.0  # gross +10% is reduced by entry/exit costs
     assert result.metrics["rebalance_count"] == 1
     assert result.metrics["total_return_pct"] > 0
+    assert result.rebalances.iloc[0]["tickers"] == "AAA"
