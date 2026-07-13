@@ -50,6 +50,7 @@ def fit_ranker_predict(
     relevance = (
         train_ordered.groupby("date")["target_rank"].rank(method="dense").astype(int) - 1
     )
+    model.set_params(label_gain=list(range(int(relevance.max()) + 1)))
     model.fit(train_ordered[feature_columns], relevance, group=groups)
     scored = test.copy()
     scored["score"] = model.predict(scored[feature_columns])
