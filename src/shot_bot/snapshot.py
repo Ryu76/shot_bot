@@ -34,5 +34,13 @@ def save_snapshot(frame: pd.DataFrame, directory: str | Path, *, name: str) -> t
 
 
 def load_snapshot(data_path: str | Path) -> pd.DataFrame:
-    """Load a saved CSV snapshot without reaching an external data provider."""
+    """Verify a saved CSV against its metadata digest before loading it."""
+    data_path = Path(data_path)
+    metadata_path = data_path.with_name(f"{data_path.stem}.metadata.json")
+    if not metadata_path.exists():
+        raise FileNotFoundError(f"missing snapshot metadata: {metadata_path}")
+    metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    digest = hashlib.sha256(data_path.read_bytes()).hexdigest()
+    if digest != metadata.get("sha256"):
+        raise ValueError("snapshot SHA-256 mismatch")
     return pd.read_csv(data_path)
