@@ -1,0 +1,11 @@
+{
+  "source": "data/snapshots/prices_20260713T080712Z.csv",
+  "strategy": "50종목 전체 감시 후 리밸런싱 시 상위 3종목 선별",
+  "tickers": [
+    "AAPL", "ABNB", "ADBE", "ADI", "AMAT", "AMD", "AMZN", "AVGO", "CDNS", "COIN",
+    "COST", "CRWD", "CTAS", "DOCU", "DXCM", "FAST", "FTNT", "GOOGL", "IDXX", "INTC",
+    "INTU", "ISRG", "KLAC", "LRCX", "MELI", "META", "MNST", "MRVL", "MSFT", "MU",
+    "NFLX", "NVDA", "NXPI", "ODFL", "OKTA", "PANW", "PAYX", "PCAR", "PYPL", "QCOM",
+    "ROKU", "ROST", "SHOP", "SNPS", "TEAM", "TSLA", "VRSK", "WDAY", "ZM", "ZS"
+  ]
+}

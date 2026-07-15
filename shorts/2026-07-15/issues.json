@@ -1,0 +1,107 @@
+{
+  "issue_date": "2026-07-15",
+  "timezone": "Asia/Seoul",
+  "current_rebalance_candidates": ["MU", "MRVL", "INTC"],
+  "disclaimer": "정보 제공 목적이며 투자 권유가 아닙니다.",
+  "issues": [
+    {
+      "slug": "ppi_growth_stocks",
+      "title": "PPI 하락, 나스닥 전부 수혜일까?",
+      "fact": "미국 6월 PPI 전월 대비 -0.3%, 근원 PPI +0.2%",
+      "mapping": {
+        "positive": ["AAPL", "AMZN", "GOOGL", "META", "MSFT", "NFLX", "NVDA", "TSLA", "ADBE", "CDNS", "CRWD", "FTNT", "INTU", "OKTA", "PANW", "SNPS", "TEAM", "WDAY", "ZM", "ZS"],
+        "watch": ["COIN", "MELI", "PYPL", "SHOP", "ABNB", "COST", "ODFL", "ROST"],
+        "risk": []
+      },
+      "sources": [
+        {"publisher": "U.S. Bureau of Labor Statistics", "published": "2026-07-15 08:30 ET", "url": "https://www.bls.gov/news.release/archives/ppi_07152026.htm"},
+        {"publisher": "CNBC", "published": "2026-07-15 08:35 ET", "url": "https://www.cnbc.com/2026/07/15/wholesale-inflation-june-2026-.html"}
+      ],
+      "scenes": [
+        {"kind": "hook", "headline": "PPI 하락 ≠ 전 종목 수혜", "body": "50종목을 같은 방향으로 보면 놓치는 게 있습니다", "narration": "미국 생산자물가가 내려갔지만, 나스닥 50종목이 전부 수혜인 건 아닙니다."},
+        {"kind": "proof", "headline": "6월 PPI -0.3%", "body": "근원 PPI +0.2% · BLS 7월 15일", "narration": "6월 PPI는 전달보다 0.3퍼센트 하락했고, 근원 수치도 예상보다 낮았습니다."},
+        {"kind": "context", "headline": "시장은 금리 기대에 반응", "body": "물가 ↓ → 긴축 부담 완화 기대", "narration": "물가 압력이 낮아지면 금리 부담이 완화될 수 있다는 기대가 먼저 커집니다."},
+        {"kind": "causal", "headline": "할인율이 핵심", "body": "금리 기대 ↓ → 미래이익 가치 ↑ → 성장주 우호", "narration": "금리 기대가 낮아지면 먼 미래 이익의 현재 가치가 커져 성장주 밸류에이션에 유리합니다."},
+        {"kind": "twist", "headline": "하지만 반도체는 달랐습니다", "body": "거시 호재보다 업종 고유 위험이 더 강할 수 있음", "narration": "하지만 같은 날 반도체는 약했습니다. 낮은 물가 하나가 업종별 공급과 경쟁 위험까지 지우지는 못합니다."},
+        {"kind": "groups", "headline": "세 그룹으로 나눠 봅니다", "body": "직접: 플랫폼·성장주 / 조건부: SaaS·핀테크 / 중립: 나머지", "narration": "직접 수혜는 대형 성장주, 조건부 수혜는 실적 확인이 필요한 소프트웨어와 핀테크, 나머지는 영향 제한으로 나눕니다."},
+        {"kind": "heatmap", "headline": "50종목 이슈 매핑", "body": "긍정 20 · 관찰 8 · 중립 22", "narration": "50종목 중 긍정 20개, 관찰 8개입니다. 대표적으로 마이크로소프트는 금리, 엔비디아는 업황, 테슬라는 수요를 따로 봐야 합니다."},
+        {"kind": "invalidation", "headline": "이 조건이면 판단이 바뀝니다", "body": "장기금리 재상승 · PCE 반등 · 실적 전망 하향", "narration": "다만 장기금리가 다시 오르거나 다음 물가와 실적 전망이 악화되면 이 매핑은 바로 달라집니다."},
+        {"kind": "loop", "headline": "PPI 하락만 보고 전부 사면 안 됩니다", "body": "다음 이슈도 같은 50종목으로 매핑합니다", "narration": "그래서 PPI 하락만 보고 전부 같은 수혜주로 보면 안 됩니다. 다음 이슈도 이 50종목 표로 설명하겠습니다."}
+      ]
+    },
+    {
+      "slug": "asml_semiconductor_twist",
+      "title": "ASML 호실적에도 반도체가 빠진 이유",
+      "fact": "ASML 연간 매출 전망 €43~45bn으로 상향",
+      "mapping": {
+        "positive": ["AMAT", "KLAC", "NVDA", "AVGO", "CDNS", "SNPS"],
+        "watch": ["ADI", "QCOM", "NXPI"],
+        "risk": ["MU", "LRCX", "INTC", "AMD", "MRVL"]
+      },
+      "sources": [
+        {"publisher": "ASML", "published": "2026-07-15", "url": "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results"},
+        {"publisher": "CNBC", "published": "2026-07-15 12:28 ET", "url": "https://www.cnbc.com/2026/07/15/stocks-making-the-biggest-moves-midday-spcx-aapl-pypl-cava-pgr-mu.html"}
+      ],
+      "scenes": [
+        {"kind": "hook", "headline": "실적 상향인데 반도체 급락?", "body": "좋은 뉴스가 전부 호재는 아니었습니다", "narration": "ASML이 전망을 올렸는데도 미국 반도체주는 급락했습니다. 왜 좋은 뉴스에 주가가 반대로 갔을까요?"},
+        {"kind": "proof", "headline": "매출 전망 €43~45bn", "body": "Q2 매출 €9.326bn · 총마진 54%", "narration": "ASML은 올해 매출 전망을 430억에서 450억 유로로 높였고, 인공지능 수요를 배경으로 들었습니다."},
+        {"kind": "context", "headline": "AI 설비투자는 강했습니다", "body": "첨단 로직·메모리 장비 수요 확대", "narration": "숫자만 보면 첨단 로직과 메모리 장비의 투자 사이클은 분명 강했습니다."},
+        {"kind": "causal", "headline": "설비투자 ↑ → 장비·설계 수혜", "body": "AMAT · KLAC · CDNS · SNPS", "narration": "설비투자가 늘면 장비업체와 반도체 설계 소프트웨어에는 주문 확대 가능성이 생깁니다."},
+        {"kind": "twist", "headline": "하지만 시장은 공급을 봤습니다", "body": "중국 메모리 경쟁 · 차익실현 · 높은 기대치", "narration": "하지만 시장은 수요보다 공급 확대와 중국 메모리 경쟁, 이미 높아진 기대치를 더 크게 봤습니다."},
+        {"kind": "groups", "headline": "수혜와 위험을 분리", "body": "긍정: 장비·AI / 관찰: 아날로그 / 위험: 메모리·일부 칩", "narration": "그래서 장비와 인공지능 칩은 긍정, 아날로그 칩은 관찰, 메모리와 일부 프로세서는 위험군으로 분리합니다."},
+        {"kind": "heatmap", "headline": "최신 후보 3개가 모두 위험군", "body": "MU · MRVL · INTC 리밸런싱 주의", "narration": "50종목 매핑에서 긍정 6개, 관찰 3개, 위험 5개입니다. 특히 봇의 최신 후보인 마이크론, 마벨, 인텔이 모두 위험군과 겹칩니다."},
+        {"kind": "invalidation", "headline": "다음 확인 지표", "body": "HBM 가격 · 중국 공급 · 장비 수주", "narration": "다음 리밸런싱 전에는 에이치비엠 가격, 중국 공급, 장비 수주가 실제 추정치 하향으로 이어지는지 확인해야 합니다."},
+        {"kind": "loop", "headline": "좋은 실적보다 중요한 건 기대치", "body": "반도체는 한 묶음으로 보면 안 됩니다", "narration": "결국 좋은 실적보다 시장 기대치가 더 중요했습니다. 반도체를 한 묶음으로 보면 이 반전을 놓칩니다."}
+      ]
+    },
+    {
+      "slug": "apple_china_ai",
+      "title": "애플 중국 AI, 진짜 교체 수요로 이어질까?",
+      "fact": "Apple Intelligence의 중국 규제 관문 통과 보도",
+      "mapping": {
+        "positive": ["AAPL", "QCOM"],
+        "watch": ["GOOGL", "MSFT", "TSLA"],
+        "risk": []
+      },
+      "sources": [
+        {"publisher": "CNBC", "published": "2026-07-15 12:28 ET", "url": "https://www.cnbc.com/2026/07/15/stocks-making-the-biggest-moves-midday-spcx-aapl-pypl-cava-pgr-mu.html"}
+      ],
+      "scenes": [
+        {"kind": "hook", "headline": "애플 중국 AI, 주가는 먼저 반응", "body": "하지만 출시와 매출은 아직 다릅니다", "narration": "애플의 중국 인공지능 서비스가 규제 관문을 넘었다는 보도에 주가는 먼저 반응했습니다."},
+        {"kind": "proof", "headline": "중국 규제 관문 통과 보도", "body": "현지 파트너: Alibaba · Baidu", "narration": "보도에 따르면 애플은 알리바바와 바이두를 현지 파트너로 두지만, 출시일은 아직 정해지지 않았습니다."},
+        {"kind": "context", "headline": "중국은 핵심 시장", "body": "AI 기능 지연은 아이폰 경쟁력의 빈칸", "narration": "중국에서 인공지능 기능이 빠진 아이폰은 현지 경쟁 제품과 비교해 큰 약점을 안고 있었습니다."},
+        {"kind": "causal", "headline": "기능 출시 → 교체 수요 기대", "body": "아이폰 판매량이 QCOM 부품 수요에도 연결", "narration": "기능 출시가 교체 수요로 이어지면 애플뿐 아니라 아이폰 부품을 공급하는 퀄컴에도 영향을 줄 수 있습니다."},
+        {"kind": "twist", "headline": "하지만 승인 ≠ 실제 채택", "body": "출시일 · 기능 제한 · 현지 모델 의존", "narration": "하지만 규제 통과가 곧 매출은 아닙니다. 출시 시점과 기능 제한, 현지 모델 의존이 남아 있습니다."},
+        {"kind": "groups", "headline": "직접 수혜는 좁습니다", "body": "직접: AAPL·QCOM / 관찰: GOOGL·MSFT·TSLA", "narration": "직접 관련은 애플과 퀄컴이고, 구글과 마이크로소프트는 플랫폼 경쟁, 테슬라는 중국 데이터 규제 관점의 관찰 대상입니다."},
+        {"kind": "heatmap", "headline": "50종목 중 직접 관련 2개", "body": "긍정 2 · 관찰 3 · 중립 45", "narration": "50종목을 매핑하면 긍정 2개, 관찰 3개, 나머지 45개는 중립입니다. 이슈를 전 시장 호재로 넓히면 안 됩니다."},
+        {"kind": "invalidation", "headline": "확인할 것은 판매량", "body": "공식 출시일 · 중국 출하량 · 자체 모뎀 전환", "narration": "공식 출시일과 중국 출하량이 확인되지 않거나 자체 모뎀 전환이 빨라지면 퀄컴 매핑은 달라집니다."},
+        {"kind": "loop", "headline": "승인보다 채택이 중요합니다", "body": "주가 반응과 실적 반영을 분리하세요", "narration": "결국 규제 승인보다 실제 사용자 채택이 중요합니다. 주가 반응과 실적 반영을 꼭 분리해서 봐야 합니다."}
+      ]
+    },
+    {
+      "slug": "paypal_takeover_report",
+      "title": "페이팔 530억 달러 인수 제안 보도",
+      "fact": "Reuters: Stripe·Advent가 PayPal에 $53bn 제안",
+      "mapping": {
+        "positive": ["PYPL"],
+        "watch": ["SHOP", "MELI", "COIN", "AAPL", "GOOGL"],
+        "risk": []
+      },
+      "sources": [
+        {"publisher": "Reuters", "published": "2026-07-15", "url": "https://www.reuters.com/business/finance/stripe-advent-offer-buy-paypal-53-billion-sources-say-2026-07-15/"},
+        {"publisher": "CNBC", "published": "2026-07-15 12:28 ET", "url": "https://www.cnbc.com/2026/07/15/stocks-making-the-biggest-moves-midday-spcx-aapl-pypl-cava-pgr-mu.html"}
+      ],
+      "scenes": [
+        {"kind": "hook", "headline": "페이팔 급등, 확정 인수일까?", "body": "530억 달러 보도에서 가장 중요한 단어", "narration": "페이팔이 급등했지만, 확정 인수로 이해하면 안 됩니다. 가장 중요한 단어는 제안 보도입니다."},
+        {"kind": "proof", "headline": "$53bn · 주당 $60.50", "body": "Stripe·Advent 제안 보도 · Reuters", "narration": "로이터는 스트라이프와 어드벤트가 530억 달러, 주당 60달러 50센트를 제안했다고 보도했습니다."},
+        {"kind": "context", "headline": "확정 계약은 아닙니다", "body": "익명 소식통 기반 · 이사회 승인 미확인", "narration": "하지만 이는 익명 소식통을 인용한 제안 보도이며, 이사회 승인이나 확정 계약 발표는 아닙니다."},
+        {"kind": "causal", "headline": "인수 프리미엄이 가격을 지지", "body": "제안가 기대 → 단기 밸류에이션 재평가", "narration": "인수 제안가는 단기적으로 페이팔 가격을 지지하고 결제 업종의 비교 가치도 다시 보게 만듭니다."},
+        {"kind": "twist", "headline": "하지만 무산되면 프리미엄 반납", "body": "자금조달 · 규제 · 가격 협상", "narration": "하지만 거래가 무산되면 프리미엄이 빠르게 사라질 수 있습니다. 자금조달과 규제 심사가 핵심 변수입니다."},
+        {"kind": "groups", "headline": "직접 수혜는 PYPL 하나", "body": "관찰: SHOP·MELI·COIN·AAPL·GOOGL", "narration": "직접 사건 종목은 페이팔 하나입니다. 쇼피파이와 메르카도리브레, 코인베이스는 결제 생태계의 간접 관찰 대상입니다."},
+        {"kind": "heatmap", "headline": "50종목 중 직접 관련 1개", "body": "긍정 1 · 관찰 5 · 중립 44", "narration": "50종목 매핑에서는 긍정 1개, 관찰 5개, 중립 44개입니다. 다른 핀테크를 자동 인수 후보로 보면 안 됩니다."},
+        {"kind": "invalidation", "headline": "공식 확인 전까지 이벤트 구간", "body": "이사회 답변 · 제안가 변경 · 규제 심사", "narration": "다음 리밸런싱 전에는 페이팔의 공식 답변과 제안가 변경, 경쟁당국 심사 가능성을 확인해야 합니다."},
+        {"kind": "loop", "headline": "급등보다 보도의 단계가 중요", "body": "제안과 확정 계약을 구분하세요", "narration": "결국 급등률보다 보도가 어느 단계인지가 중요합니다. 제안과 확정 계약을 반드시 구분해서 보세요."}
+      ]
+    }
+  ]
+}

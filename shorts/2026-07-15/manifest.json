@@ -1,0 +1,89 @@
+{
+  "issue_date": "2026-07-15",
+  "created_for_timezone": "Asia/Seoul",
+  "voice": "ko-KR-SunHiNeural",
+  "strategy": "50종목 이슈 매핑 후 기존 리밸런싱 점수·유동성·RSI와 결합",
+  "current_rebalance_candidates": [
+    "MU",
+    "MRVL",
+    "INTC"
+  ],
+  "videos": [
+    {
+      "slug": "ppi_growth_stocks",
+      "title": "PPI 하락, 나스닥 전부 수혜일까?",
+      "video": "ppi_growth_stocks.mp4",
+      "script": "ppi_growth_stocks_script.md",
+      "captions": "ppi_growth_stocks.srt",
+      "duration_seconds": 60.0,
+      "resolution": "1080x1920",
+      "fps": 30,
+      "source_audio_duration_seconds": 73.37,
+      "mapping_counts": {
+        "positive": 20,
+        "watch": 8,
+        "risk": 0,
+        "neutral": 22
+      },
+      "sha256": "ccdf0d14a8f0ad13fe4b9ad0dd290d57e25a91140eb2bf5dc1a80e23af3d8df9",
+      "bytes": 2485810
+    },
+    {
+      "slug": "asml_semiconductor_twist",
+      "title": "ASML 호실적에도 반도체가 빠진 이유",
+      "video": "asml_semiconductor_twist.mp4",
+      "script": "asml_semiconductor_twist_script.md",
+      "captions": "asml_semiconductor_twist.srt",
+      "duration_seconds": 60.0,
+      "resolution": "1080x1920",
+      "fps": 30,
+      "source_audio_duration_seconds": 77.33,
+      "mapping_counts": {
+        "positive": 6,
+        "watch": 3,
+        "risk": 5,
+        "neutral": 36
+      },
+      "sha256": "95e226e96830bc7d4d316b0b2c7801ac94df161774d7722c4f269210a8460536",
+      "bytes": 2444616
+    },
+    {
+      "slug": "apple_china_ai",
+      "title": "애플 중국 AI, 진짜 교체 수요로 이어질까?",
+      "video": "apple_china_ai.mp4",
+      "script": "apple_china_ai_script.md",
+      "captions": "apple_china_ai.srt",
+      "duration_seconds": 60.0,
+      "resolution": "1080x1920",
+      "fps": 30,
+      "source_audio_duration_seconds": 76.1,
+      "mapping_counts": {
+        "positive": 2,
+        "watch": 3,
+        "risk": 0,
+        "neutral": 45
+      },
+      "sha256": "6b7e91089505427221fc9a8f4d17fcc5fae7344ea17ec20828ca2c39bd0fb4e3",
+      "bytes": 2433714
+    },
+    {
+      "slug": "paypal_takeover_report",
+      "title": "페이팔 530억 달러 인수 제안 보도",
+      "video": "paypal_takeover_report.mp4",
+      "script": "paypal_takeover_report_script.md",
+      "captions": "paypal_takeover_report.srt",
+      "duration_seconds": 60.0,
+      "resolution": "1080x1920",
+      "fps": 30,
+      "source_audio_duration_seconds": 78.07,
+      "mapping_counts": {
+        "positive": 1,
+        "watch": 5,
+        "risk": 0,
+        "neutral": 44
+      },
+      "sha256": "8859e8f0d36701f3d2daf5145576b5fb9e47b107580d323c931700f6685b6d89",
+      "bytes": 2420356
+    }
+  ]
+}

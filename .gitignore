@@ -8,3 +8,7 @@ data/snapshots/
 reports/
 config/price_alerts.json
 data/alert_state.json
+shorts/*/assets/
+shorts/*/previews/
+shorts/*/verification/
+shorts/*/*.mp4
