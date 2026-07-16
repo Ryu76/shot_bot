@@ -12,3 +12,8 @@ shorts/*/assets/
 shorts/*/previews/
 shorts/*/verification/
 shorts/*/*.mp4
+shorts/*/youtube_upload_state.json
+config/youtube_upload.json
+config/youtube_client_secret*.json
+config/client_secret*.json
+config/youtube_token.json

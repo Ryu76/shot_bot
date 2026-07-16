@@ -19,6 +19,10 @@ shorts = [
   "edge-tts>=7.0",
   "imageio-ffmpeg>=0.5",
 ]
+youtube-upload = [
+  "google-api-python-client>=2.0",
+  "google-auth-oauthlib>=1.2",
+]
 dev = ["pytest>=8.0"]
 
 [tool.pytest.ini_options]

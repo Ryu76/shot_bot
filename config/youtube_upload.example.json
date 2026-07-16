@@ -1,0 +1,17 @@
+{
+  "client_secrets_file": "config/youtube_client_secret.json",
+  "token_file": "config/youtube_token.json",
+  "privacy_status": "private",
+  "made_for_kids": false,
+  "category_id": "25",
+  "default_tags": [
+    "나스닥",
+    "미국주식",
+    "주식이슈",
+    "경제뉴스"
+  ],
+  "playlist_id": "",
+  "notify_subscribers": false,
+  "upload_captions": true,
+  "language": "ko"
+}

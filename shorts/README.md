@@ -68,6 +68,24 @@ shorts/YYYY-MM-DD/
 3. 기존 점수, 달러 거래대금, RSI, 손절 조건을 그대로 적용
 4. 이슈의 반증 조건이 확인되면 매핑 갱신
 
+## YouTube 자동 업로드
+
+OAuth 설정과 자동 업로드 방법은 [`YOUTUBE_UPLOAD_SETUP.md`](YOUTUBE_UPLOAD_SETUP.md)를 참고하세요.
+
+```bash
+# 인증 없이 최신 완성본 점검
+.venv/Scripts/python.exe scripts/upload_youtube_shorts.py \
+  --config config/youtube_upload.json \
+  --dry-run
+
+# 첫 비공개 영상 1편 업로드
+.venv/Scripts/python.exe scripts/upload_youtube_shorts.py \
+  --config config/youtube_upload.json \
+  --limit 1
+```
+
+성공한 영상은 날짜 폴더의 `youtube_upload_state.json`에 기록돼 재실행 시 중복 업로드되지 않습니다.
+
 ## 업로드 후 확인 지표
 
 - Viewed vs swiped away
