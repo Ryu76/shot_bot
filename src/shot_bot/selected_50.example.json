@@ -1,0 +1,9 @@
+[
+  {
+    "ticker": "AAPL",
+    "exchange": "NASD",
+    "target_qty": 1,
+    "entry_price": 200.0,
+    "stop_price": 190.0
+  }
+]

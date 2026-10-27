@@ -17,3 +17,26 @@ config/youtube_upload.json
 config/youtube_client_secret*.json
 config/client_secret*.json
 config/youtube_token.json
+
+# Public-source hygiene (runtime data and credentials stay local)
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.db
+*.db-*
+*.sqlite*
+*.dpapi
+*.key
+*.pem
+*.pfx
+*.p12
+credentials.json
+token.json
+client_secret*.json
+.secret*
+node_modules/
+.venv/
+__pycache__/
+.harness/

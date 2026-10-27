@@ -1,0 +1,7 @@
+# Private credentials and local configuration
+.env
+.env.*
+!.env.example
+
+# Local live-quote forward-test ledger
+.forward_test/
